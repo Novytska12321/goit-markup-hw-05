@@ -557,6 +557,11 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-form-input:focus {
+  border-color: #4d5ae5;
 }
 .review-form-field-wrapper {
   margin-bottom: 8px;
@@ -567,6 +572,31 @@ body {
 .review-form-field-icon {
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translateY(-50% -50%);
+  left: 16px;
+  transform: translateY(-50%);
+}
+.review-form-input:focus + .review-form-field-icon {
+  fill: #4d5ae5;
+}
+.review-form-message {
+  height: 120px;
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  resize: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-form-message::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+.review-form-message:focus {
+  border-color: #4d5ae5;
+  outline: transparent;
 }
