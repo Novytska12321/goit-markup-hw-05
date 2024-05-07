@@ -470,7 +470,8 @@ body {
 .footer-logo-cont {
   margin-right: 120px;
 }
-.footer-subscribe-label {
+.footer-subscribe-text {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -488,13 +489,20 @@ body {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+.form-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
 .footer-subscribe-button {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   font-size: 16px;
@@ -503,16 +511,12 @@ body {
   text-align: center;
   color: #fff;
   margin-left: 24px;
-  margin-top: 25px;
 }
 .footer-sub-icon {
   fill: #fff;
   margin-left: 16px;
 }
 .footer-sub-input-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 /* ===========Backdrop========== */
 .backdrop {
