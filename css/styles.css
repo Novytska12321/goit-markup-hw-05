@@ -655,6 +655,9 @@ body {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
+.reviews-form-field-wrapper {
+  margin-bottom: 16px;
+}
 .review-form-message::placeholder {
   font-size: 12px;
   line-height: 1.17;
